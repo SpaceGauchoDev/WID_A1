@@ -1,0 +1,93 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: "trebuchet ms", Arial
+}
+
+body{
+    background-color: #999
+}
+
+/*to eliminate whitespace between list elements*/
+ul {
+    display: flex;
+}
+
+#contenedor{
+    background-color: #fff;
+    width: 1280px;
+    margin: 0px auto;
+}
+
+section{
+    padding: 25px;
+}
+
+header{
+    height:212px;
+}
+
+nav{
+    float: right;
+    margin: 50px 20px 0 0;
+}
+nav ul{
+    list-style-type: none
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    display: block;
+    line-height: 100px;
+    height: 100px;
+    width: 130px;
+    text-align: center;
+    color:#000;
+    text-decoration: none;
+    text-transform: uppercase
+}
+
+
+footer{
+    height:172px;
+    width: 100%;
+    
+    background-color:black;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#disclaimer{
+    height: 64px;
+}
+
+footer span p{
+    color:white;
+    text-align: center;
+    line-height: 64px;
+}
+
+#socialMedia{
+    height: 64px;
+    margin: 0px 50px 0px 0px;
+    display:flex;
+    justify-content: flex-end;
+}
+
+.quarter-width{
+    flex-grow: 1;
+    flex-basis: 25%;
+    
+}
+
+.half-width{
+    flex-grow: 1;
+    width: 50%;
+}
+
+footer span img{
+    display: inline-block;
+    margin: 0 7px; 
+}
