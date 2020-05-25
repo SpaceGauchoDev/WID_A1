@@ -1,3 +1,6 @@
+/*=================GENERAL================*/
+/*vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+
 *{
     margin:0;
     padding: 0;
@@ -8,8 +11,8 @@ body{
     background-color: #999
 }
 
-/*to eliminate whitespace between list elements*/
 ul {
+    /*To eliminate whitespace between list elements*/
     display: flex;
 }
 
@@ -23,31 +26,43 @@ section{
     padding: 25px;
 }
 
+/*=================HEADER=================*/
+/*vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+
 header{
-    height:212px;
+    height: 225px;
+    width: 100%;
+    display:flex;
 }
 
-nav{
-    float: right;
-    margin: 50px 20px 0 0;
+header span{
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
-nav ul{
-    list-style-type: none
+
+header span nav ul{
+    list-style-type: none;
 }
-nav ul li{
-    display: inline-block;
+header span nav ul li{
+    /*Leaving horizontal space in between the nav elevements, ie the list items*/
+    padding-left: 20px;
+    padding-right: 20px;
 }
-nav ul li a{
-    display: block;
-    line-height: 100px;
-    height: 100px;
-    width: 130px;
+header span nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 45px;
+    height: 45px;
+    width: auto;
     text-align: center;
     color:#000;
-    text-decoration: none;
-    text-transform: uppercase
+    /*leaving 2 px up and down*/
+    font-size: 41px; 
 }
 
+/*=================FOOTER=================*/
+/*vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
 
 footer{
     height:172px;
@@ -76,18 +91,25 @@ footer span p{
     justify-content: flex-end;
 }
 
-.quarter-width{
-    flex-grow: 1;
-    flex-basis: 25%;
-    
-}
-
-.half-width{
-    flex-grow: 1;
-    width: 50%;
-}
-
 footer span img{
     display: inline-block;
     margin: 0 7px; 
+}
+
+/*=================WIDTHS FOR FLEX SPANS=================*/
+/*vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+
+.width-1-quarter{
+    flex-grow: 1;
+    width: 25%;
+}
+
+.width-3-quarter{
+    flex-grow: 1;
+    width: 75%;
+}
+
+.width-half{
+    flex-grow: 1;
+    width: 50%;
 }
