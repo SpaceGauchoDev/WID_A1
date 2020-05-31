@@ -1,53 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to my Star Trek appretiation web zone - Live Long And Prosper!</title>
+    <link href="twinklingStarsBackground.css" rel="stylesheet" type="text/css"/>
     <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200;400;700&display=swap" rel="stylesheet"> 
 </head>
 <body>
+    <div class="background-container">
+        <div class="stars"></div>
+        <div class="twinkling"></div>
+    </div>
     <div id="contenedor">
         <header>
-            <span class="width-1-quarter">
-                <img src="img/logoHeightsasasasas.png">
-            </span>
-            <span class="width-3-quarter">
-                <nav>
-                    <ul>
-                        <li><a href="#" title="Quienes somos ">Reseña</a></li>
-                        <li><a href="#" title="Información sobre los servicios de Vetcare">Capitulos</a></li>
-                        <li><a href="#" title="Listados de sitios de interes">Opiniones</a></li>
-                    </ul>
-                </nav>
-            </span>
+            <img class="width-1-quarter" src="img/logoHeight140.svg" alt="Star Trek TNG logo">
+            <nav class="width-3-quarter">
+                <ul>
+                    <li><a href="#" title="Reseña">Reseña</a></li>
+                    <li><a href="#" title="Capítulos">Capítulos</a></li>
+                    <li><a href="#" title="Opiniones">Opiniones</a></li>
+                </ul>
+            </nav>
         </header>
         <section id="resenia">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloribus nisi praesentium odit distinctio tempora ducimus a, eveniet harum rem minus aut vero ipsam voluptate culpa dolorum possimus quas molestiae?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloribus nisi praesentium odit distinctio tempora ducimus a, eveniet harum rem minus aut vero ipsam voluptate culpa dolorum possimus quas molestiae?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloribus nisi praesentium odit distinctio tempora ducimus a, eveniet harum rem minus aut vero ipsam voluptate culpa dolorum possimus quas molestiae?</p>
+            <h2>Reseña</h2>
+            <div>
+                <img class="width360" src="img/startrekTNGMainCastPicture2093x1309.jpg" alt="Cast image.">
+                <p class="width360">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis accusantium placeat reiciendis iste provident similique eaque architecto! Possimus cupiditate maxime adipisci ex culpa eaque, quibusdam officiis magni aut accusantium iure.</p>
+                <div id="resenia-characters" class="width360">
+                    <h3>Personajes</h3>
+                    <ul id="characters-ul">
+                        <li><span class="li-main">Geordi La Forge</span><span class="verticalDash"></span><span class="li-sub">LeVar Burton</span></li>
+                        <li><span class="li-main">Jean-Luc Picard</span><span class="verticalDash"></span><span class="li-sub">Sir Patrick Stewart</span></li>
+                        <li><span class="li-main">Beverly Crusher</span><span class="verticalDash"></span><span class="li-sub">Gates McFadden</span></li>
+                    </ul>
+                </div>
+            </div>
         </section>        
         <section id="capitulos">
+            <h2>Capítulos</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloribus nisi praesentium odit distinctio tempora ducimus a, eveniet harum rem minus aut vero ipsam voluptate culpa dolorum possimus quas molestiae?</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloribus nisi praesentium odit distinctio tempora ducimus a, eveniet harum rem minus aut vero ipsam voluptate culpa dolorum possimus quas molestiae?</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloribus nisi praesentium odit distinctio tempora ducimus a, eveniet harum rem minus aut vero ipsam voluptate culpa dolorum possimus quas molestiae?</p>
         </section>        
         <section id="opiniones">
+            <h2>Opiniones</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloribus nisi praesentium odit distinctio tempora ducimus a, eveniet harum rem minus aut vero ipsam voluptate culpa dolorum possimus quas molestiae?</p>                        
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloribus nisi praesentium odit distinctio tempora ducimus a, eveniet harum rem minus aut vero ipsam voluptate culpa dolorum possimus quas molestiae?</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloribus nisi praesentium odit distinctio tempora ducimus a, eveniet harum rem minus aut vero ipsam voluptate culpa dolorum possimus quas molestiae?</p>
         </section>        
 
         <footer>
-            <span class="width-1-quarter">
-            </span>
-            <span id="disclaimer" class="width-half">        
+            <div class="width-1-quarter">
+            </div>
+            <div id="disclaimer" class="width-half">        
                 <p>Todos los derechos reservados - 2020</p>
-            </span>
-            <span id="socialMedia" class="width-1-quarter">
-                <img src="img/iconSmall_Insta.png" alt="Instagram"><img src="img/iconSmall_Twit.png" alt="Twitter"><img src="img/iconSmall_Face.png" alt="Facebook">
-            </span>
+            </div>
+            <div id="socialMedia" class="width-1-quarter">
+                <img src="img/instagram40x40.svg" alt="Instagram icon"><img src="img/twitter40x40.svg" alt="Twitter icon"><img src="img/facebook40x40.svg" alt="Facebook icon">
+            </div>
         </footer>   
     </div>
+  
 </body>
 </html>
