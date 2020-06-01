@@ -15,13 +15,22 @@
     --h2PlusMargins: 50px;
 
     /*applies to li in ul in resenia*/
-    --charactersLineHeight: 30px;
-    --charactersFontSize: 18px;
+    --reseniaCharactersLineHeight: 30px;
+    --reseniaCharactersFontSize: 18px;
+
+    /**/
+    --capitulosDescriptionTitlesFontSize: 20px;
+    --capitulosDescriptionTitlesLineHeight: 22px;
+    
+    --capitulosDescriptionFocusedFontSize: 12px;
+    --capitulosDescriptionFocusedLineHeight: 16px;
+
+    --capitulosDescriptionGridFontSize: 10px;
+    --capitulosDescriptionGridLineHeight: 12px;
 }
 
 body{
-    background-color: #999;
-    
+    background-color: rgb(30, 30, 30);
 }
 
 #contenedor{
@@ -78,11 +87,13 @@ header nav ul{
     display: flex;
     list-style-type: none;
 }
+
 header nav ul li{
     /*Leaving horizontal space in between the nav elevements, ie the list items*/
     padding-left: 20px;
     padding-right: 20px;
 }
+
 header nav ul li a{
     text-decoration: none;
     text-transform: uppercase;
@@ -100,34 +111,31 @@ header nav ul li a{
 /*vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
 
 #resenia{
-    height: calc(225px + var(--h2PlusMargins));
     /*por los 50px de margin left de todos los section*/
     width: calc(100% - var(--leftMargin));
-}
-
-#resenia img {
-    border-radius: 15px 50px;
-}
-
-#resenia div{
+    height: calc(225px + var(--h2PlusMargins));
     display:flex;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
-#resenia-characters{
-    display:flex; /* possibly redundant */
     flex-direction: column;
 }
 
-#resenia-characters h3{
-    /*doing this so this element occupies the entire 
-    width of the container and aligns to the left*/
-    width: 100%;
+#resenia img {
+    border-radius: 15px 45px;
+}
 
-}    
+.reseniaContent{
+    display:flex;
+    flex-direction: row;
+    /*align-items: flex-start;*/
+    justify-content: space-between;
+}
 
-#characters-ul{
+.reseniaCharacters{
+    display:flex; /* possibly redundant */
+    flex-direction: column;
+    flex-basis: 360px;
+}
+
+#reseniaCharacters-ul{
     /*doing this so this element occupies the entire 
     width of the container and aligns to the left*/
     width: 100%;
@@ -136,10 +144,10 @@ header nav ul li a{
     list-style-position: inside;
 }
 
-#characters-ul li{
-    font-size: var(--charactersFontSize);
-    line-height: var(--charactersLineHeight);
-    height: var(--charactersLineHeight);
+#reseniaCharacters-ul li{
+    font-size: var(--reseniaCharactersFontSize);
+    line-height: var(--reseniaCharactersLineHeight);
+    height: var(--reseniaCharactersLineHeight);
     color:#000;
     margin: 5px 0px 5px 0px;
 }
@@ -154,6 +162,128 @@ header nav ul li a{
 
 .li-sub{
     font-weight: normal;
+}
+
+
+/*=================MAIN CAPITULOS=========*/
+/*vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+
+/*general*/
+#capitulos{
+    /*por los 50px de margin left de todos los section*/
+    width: calc(100% - var(--leftMargin));
+    height: calc(550px + var(--h2PlusMargins));
+    display:flex;
+    flex-direction: column;
+}
+
+#episodesContent{
+    width: 100%;
+    height: 550px;
+    display:flex;
+    flex-direction: row;
+}
+
+#capitulos article{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#capitulos .episodeNumber{
+    font-size:var(--capitulosDescriptionTitlesFontSize);
+    line-height: var(--capitulosDescriptionTitlesLineHeight);
+    font-weight: bold;
+}
+
+#capitulos .episodeTitle{
+    font-size:var(--capitulosDescriptionTitlesFontSize);
+    line-height: var(--capitulosDescriptionTitlesLineHeight);
+    font-weight: normal;
+}
+
+.episodeAmpliarButton {
+    text-align: center;
+    line-height:30px;
+    width: 125px;
+	background-color:#8a8a8a;
+	color:#ffffff;
+	font-size:14px;
+    text-decoration:none;
+    text-transform: uppercase;
+}
+.episodeAmpliarButton:hover {
+	background-color:#d1d1d1;
+}
+.episodeAmpliarButton:active {
+	position:relative;
+	top:1px;
+}
+
+/*focused*/
+.focusedEpisode{
+    width: 480px;
+    height: 100%;
+    font-size: var(--capitulosDescriptionFocusedFontSize);
+    line-height: var(--capitulosDescriptionFocusedLineHeight);
+    margin-right: 75px;
+}
+
+.focusedEpisode img,
+.focusedEpisode div,
+.focusedEpisode p{
+    margin-bottom: 10px;
+}
+
+.focusedEpisode img{
+    width: 480px;
+    height: 290px;
+    object-fit: cover;
+    border-radius: 15px 45px;
+}
+
+.focusedEpisode .verticalDash:before{
+    content: " | ";
+    font-size:var(--capitulosDescriptionTitlesFontSize);
+}
+
+/*grid*/
+.episodesGrid{
+    width: 600px;
+    height: 100%;
+    margin-right: 75px;
+    display:flex;   
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    font-size: var(--capitulosDescriptionGridFontSize);
+    line-height: var(--capitulosDescriptionGridLineHeight);
+}
+
+.episodesGrid article{
+    width: 180px;
+    margin-bottom: 30px;
+}
+
+.episodesGrid img{
+    width: 180px;
+    height: 109px;
+    object-fit: cover;
+    border-radius: 5px 15px;
+}
+
+.episodesGrid .episodeDescriptionExtra {
+    display: none;
+}
+
+.episodesGrid .verticalDash:before{
+    content: none;
+}
+
+.episodesGrid .episodeHeader{
+    display:flex;   
+    flex-direction: column;
 }
 
 /*=================FOOTER=================*/
@@ -213,5 +343,3 @@ footer div img{
 .width-1-third{
     flex-basis: 33%;
 }
-
-
