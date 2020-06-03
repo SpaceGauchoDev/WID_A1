@@ -123,6 +123,13 @@ h2{
     z-index: -1;
 }
 
+.parallax{
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 /*=================SIMPLE WIDTHS FOR FLEX================*/
 /*vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
 
@@ -208,6 +215,18 @@ header nav ul li{
 	position:relative;
     top:1px;
 }
+
+/*========MAIN SCROLLING IMAGE============*/
+/*vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+
+#mainHeaderImage{
+    width: calc(var(--fullWidth) - (2 * (var(--insideMargin))));
+    /* Set a specific height */
+    height: 450px;
+    background-image: url('img/andrew-gavrilov-entdnebula01-00000_1280x550.jpg');
+    border-radius: 15px 45px;
+}
+
 
 /*=================MAIN RESEÑA============*/
 /*vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
