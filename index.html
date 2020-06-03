@@ -3,132 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to my Star Trek appretiation web zone - Live Long And Prosper!</title>
+    <title>Welcome to my Star Trek appretiation web zone - Live Long And Prosper!</title>   
     <link href="twinklingStarsBackground.css" rel="stylesheet" type="text/css"/>
-    <link href="style.css" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200;400;700&display=swap" rel="stylesheet"> 
+    <link href="style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-    <!--
     <div class="background-container">
         <div class="stars"></div>
         <div class="twinkling"></div>
     </div>
-    -->
     <div id="contenedor">
         <header>
             <img class="width-1-quarter" src="img/logoHeight140.svg" alt="Star Trek TNG logo">
             <nav class="width-3-quarter">
                 <ul>
-                    <li><a href="#" title="Reseña">Reseña</a></li>
-                    <li><a href="#" title="Capítulos">Capítulos</a></li>
-                    <li><a href="#" title="Opiniones">Opiniones</a></li>
+                    <li><a href="#resenia" class="headerNavButton" title="Reseña">Reseña</a></li>
+                    <li><a href="#capitulos" class="headerNavButton" title="Capítulos">Capítulos</a></li>
+                    <li><a href="#opiniones" class="headerNavButton" title="Opiniones">Opiniones</a></li>
                 </ul>
             </nav>
         </header>
         <section id="resenia">
-            <h2>Reseña</h2>
+            <h1>Reseña</h1>
             <div class="reseniaContent">
                 <img class="width360" src="img/startrekTNGMainCastPicture2093x1309.jpg" alt="Cast image.">
-                <p class="width360">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis accusantium placeat reiciendis iste provident similique eaque architecto! Possimus cupiditate maxime adipisci ex culpa eaque, quibusdam officiis magni aut accusantium iure.</p>
+                <p class="width360">Star Trek: The Next Generation, often abbreviated to TNG, is the third Star Trek television series, and the first set in the 24th century. Like its predecessors, it was created by Gene Roddenberry. Produced at Paramount Pictures, it aired in first-run syndication, by Viacom in the US, from September 1987 to May 1994. The series led to three spin-offs in the TNG era: Star Trek: Deep Space Nine, which it ran alongside during its final two seasons, Star Trek: Voyager, and Star Trek: Picard. It is also the beginning of a contiguous period of time during which there was always at least one Star Trek series in production, ending with Star Trek: Enterprise in 2005.</p>
+                
                 <div class="reseniaCharacters">
-                    <h3>Personajes</h3>
+                    <h2>Personajes</h2>
                     <ul id="reseniaCharacters-ul">
-                        <li><span class="li-main">Geordi La Forge</span><span class="verticalDash"></span><span class="li-sub">LeVar Burton</span></li>
-                        <li><span class="li-main">Jean-Luc Picard</span><span class="verticalDash"></span><span class="li-sub">Sir Patrick Stewart</span></li>
-                        <li><span class="li-main">Beverly Crusher</span><span class="verticalDash"></span><span class="li-sub">Gates McFadden</span></li>
+                        <li><strong>Geordi La Forge</strong>LeVar Burton</li>
+                        <li><strong>Jean-Luc Picard</strong>Sir Patrick Stewart</li>
+                        <li><strong>Beverly Crusher</strong>Gates McFadden</li>
                     </ul>
                 </div>
             </div>
         </section>        
         <section id="capitulos">
-            <h2>Capítulos</h2>
+            <h1>Capítulos</h1>
             <div id="episodesContent">
                 <div class="focusedEpisode">
                     <article>
-                        <img class="episodeThumbnail" src="img/s05e15Screenshot.png" alt="Episode screenshot">
-                        <div class="episodeHeader">
-                            <span class="episodeNumber">Capítulo 15</span><span class="verticalDash"></span><span class="episodeTitle">Power Play</span>
-                        </div>
-                        <p class="episodeDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <p class="episodeDescriptionExtra"> Laudantium nobis voluptates nulla ex atque adipisci earum animi corporis nam incidunt eos voluptatem, quo, odit tempora non. Consequuntur nesciunt reprehenderit accusamus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore quae, illum iste dolorem explicabo perspiciatis voluptatibus obcaecati architecto! Dignissimos ut illum distinctio id consequatur ea. Aspernatur commodi assumenda maiores quis!</p>
+                        <img class="episodeThumbnail" src="img/s05e01.png" alt="Episode screenshot">
+                        <h2 class="episodeTitle"><strong>Capítulo 1</strong><br>Redemption II</h2>
+                        <p class="episodeDescription">As the House of Duras is nearing victory over Worf and the forces of Gowron, Starfleet, led by Picard, works to expose Romulan interference in the Klingon Civil War.</p>
+                        <p class="episodeDescriptionExtra">Written by Ronald D. Moore, Directed by David Carson</p>
                         <a class="episodeAmpliarButton"href="#" title="Ampliar">Ampliar</a>
                     </article>
                 </div>
                 <div class="episodesGrid">
                     <article>
-                        <img class="episodeThumbnail" src="img/s05e15Screenshot.png" alt="Episode screenshot">
-                        <div class="episodeHeader">
-                            <span class="episodeNumber">Capítulo 15</span><span class="verticalDash"></span><span class="episodeTitle">Power Play</span>
-                        </div>
-                        <p class="episodeDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <p class="episodeDescriptionExtra"> Laudantium nobis voluptates nulla ex atque adipisci earum animi corporis nam incidunt eos voluptatem, quo, odit tempora non. Consequuntur nesciunt reprehenderit accusamus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore quae, illum iste dolorem explicabo perspiciatis voluptatibus obcaecati architecto! Dignissimos ut illum distinctio id consequatur ea. Aspernatur commodi assumenda maiores quis!</p>
+                        <img class="episodeThumbnail" src="img/s05e02.png" alt="Episode screenshot">
+                        <h2 class="episodeTitle"><strong>Capítulo 2</strong><br>Darmok</h2>
+                        <p class="episodeDescription">Picard is captured, then trapped on a planet with an alien captain who speaks a metaphorical language incompatible with the universal translator.</p>
+                        <p class="episodeDescriptionExtra">Teleplay by Joe Menosky, Story by Philip LaZebnik and Joe Menosky, Directed by Winrich Kolbe</p>
+                        <a class="episodeAmpliarButton"href="#" title="Ampliar">Ampliar</a>
+                    </article>
+
+                    <article>
+                        <img class="episodeThumbnail" src="img/s05e03.png" alt="Episode screenshot">
+                        <h2 class="episodeTitle"><strong>Capítulo 3</strong><br>Ensign Ro</h2>
+                        <p class="episodeDescription">The Enterprise takes on Ensign Ro Laren to help track down Bajoran terrorists who attacked a Federation colony.</p>
+                        <p class="episodeDescriptionExtra">Teleplay by Michael Piller, Story by Rick Berman and Michael Piller, Directed by Les Landau</p>
                         <a class="episodeAmpliarButton"href="#" title="Ampliar">Ampliar</a>
                     </article>
                     <article>
-                        <img class="episodeThumbnail" src="img/s05e15Screenshot.png" alt="Episode screenshot">
-                        <div class="episodeHeader">
-                            <span class="episodeNumber">Capítulo 15</span><span class="verticalDash"></span><span class="episodeTitle">Power Play</span>
-                        </div>
-                        <p class="episodeDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <p class="episodeDescriptionExtra"> Laudantium nobis voluptates nulla ex atque adipisci earum animi corporis nam incidunt eos voluptatem, quo, odit tempora non. Consequuntur nesciunt reprehenderit accusamus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore quae, illum iste dolorem explicabo perspiciatis voluptatibus obcaecati architecto! Dignissimos ut illum distinctio id consequatur ea. Aspernatur commodi assumenda maiores quis!</p>
+                        <img class="episodeThumbnail" src="img/s05e04.png" alt="Episode screenshot">
+                        <h2 class="episodeTitle"><strong>Capítulo 4</strong><br>Silicon Avatar</h2>
+                        <p class="episodeDescription">The Enterprise gives chase to the Crystalline Entity after it destroys a Federation colony.</p>
+                        <p class="episodeDescriptionExtra">Teleplay by Jeri Taylor, Story by Lawrence V. Conley, Directed by Cliff Bole</p>
                         <a class="episodeAmpliarButton"href="#" title="Ampliar">Ampliar</a>
                     </article>
                     <article>
-                        <img class="episodeThumbnail" src="img/s05e15Screenshot.png" alt="Episode screenshot">
-                        <div class="episodeHeader">
-                            <span class="episodeNumber">Capítulo 15</span><span class="verticalDash"></span><span class="episodeTitle">Power Play</span>
-                        </div>
-                        <p class="episodeDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <p class="episodeDescriptionExtra"> Laudantium nobis voluptates nulla ex atque adipisci earum animi corporis nam incidunt eos voluptatem, quo, odit tempora non. Consequuntur nesciunt reprehenderit accusamus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore quae, illum iste dolorem explicabo perspiciatis voluptatibus obcaecati architecto! Dignissimos ut illum distinctio id consequatur ea. Aspernatur commodi assumenda maiores quis!</p>
+                        <img class="episodeThumbnail" src="img/s05e05.png" alt="Episode screenshot">
+                        <h2 class="episodeTitle"><strong>Capítulo 5</strong><br>Disaster</h2>
+                        <p class="episodeDescription">A quantum filament disables the Enterprise, leaving Counselor Troi in command on the bridge, and various groups on different parts of the ship facing perils alone.</p>
+                        <p class="episodeDescriptionExtra">Teleplay by Ronald D. Moore, Story by Ron Jarvis and Philip A. Scorza, Directed by Gabrielle Beaumont</p>
                         <a class="episodeAmpliarButton"href="#" title="Ampliar">Ampliar</a>
                     </article>
                     <article>
-                        <img class="episodeThumbnail" src="img/s05e15Screenshot.png" alt="Episode screenshot">
-                        <div class="episodeHeader">
-                            <span class="episodeNumber">Capítulo 15</span><span class="verticalDash"></span><span class="episodeTitle">Power Play</span>
-                        </div>
-                        <p class="episodeDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <p class="episodeDescriptionExtra"> Laudantium nobis voluptates nulla ex atque adipisci earum animi corporis nam incidunt eos voluptatem, quo, odit tempora non. Consequuntur nesciunt reprehenderit accusamus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore quae, illum iste dolorem explicabo perspiciatis voluptatibus obcaecati architecto! Dignissimos ut illum distinctio id consequatur ea. Aspernatur commodi assumenda maiores quis!</p>
+                        <img class="episodeThumbnail" src="img/s05e06.png" alt="Episode screenshot">
+                        <h2 class="episodeTitle"><strong>Capítulo 6</strong><br>The Game</h2>
+                        <p class="episodeDescription">Wesley Crusher visits the Enterprise only to see everyone behaving strangely on account of an addictive, mind-controlling game.</p>
+                        <p class="episodeDescriptionExtra">Teleplay by Ronald D. Moore, Story by Ron Jarvis and Philip A. Scorza, Directed by Gabrielle Beaumont</p>
                         <a class="episodeAmpliarButton"href="#" title="Ampliar">Ampliar</a>
                     </article>
                     <article>
-                        <img class="episodeThumbnail" src="img/s05e15Screenshot.png" alt="Episode screenshot">
-                        <div class="episodeHeader">
-                            <span class="episodeNumber">Capítulo 15</span><span class="verticalDash"></span><span class="episodeTitle">Power Play</span>
-                        </div>
-                        <p class="episodeDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <p class="episodeDescriptionExtra"> Laudantium nobis voluptates nulla ex atque adipisci earum animi corporis nam incidunt eos voluptatem, quo, odit tempora non. Consequuntur nesciunt reprehenderit accusamus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore quae, illum iste dolorem explicabo perspiciatis voluptatibus obcaecati architecto! Dignissimos ut illum distinctio id consequatur ea. Aspernatur commodi assumenda maiores quis!</p>
-                        <a class="episodeAmpliarButton"href="#" title="Ampliar">Ampliar</a>
-                    </article>
-                    <article>
-                        <img class="episodeThumbnail" src="img/s05e15Screenshot.png" alt="Episode screenshot">
-                        <div class="episodeHeader">
-                            <span class="episodeNumber">Capítulo 15</span><span class="verticalDash"></span><span class="episodeTitle">Power Play</span>
-                        </div>
-                        <p class="episodeDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <p class="episodeDescriptionExtra"> Laudantium nobis voluptates nulla ex atque adipisci earum animi corporis nam incidunt eos voluptatem, quo, odit tempora non. Consequuntur nesciunt reprehenderit accusamus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore quae, illum iste dolorem explicabo perspiciatis voluptatibus obcaecati architecto! Dignissimos ut illum distinctio id consequatur ea. Aspernatur commodi assumenda maiores quis!</p>
+                        <img class="episodeThumbnail" src="img/s05e07.png" alt="Episode screenshot">
+                        <h2 class="episodeTitle"><strong>Capítulo 7</strong><br>Unification I</h2>
+                        <p class="episodeDescription">To the Federation's surprise, Ambassador Spock has traveled to Romulus. Fearing he has defected, they send Captain Picard and Data on a covert mission to determine why.</p>
+                        <p class="episodeDescriptionExtra">Teleplay by Jeri Taylor, Story by Rick Berman and Michael Piller, Directed by Les Landau</p>
                         <a class="episodeAmpliarButton"href="#" title="Ampliar">Ampliar</a>
                     </article>
                 </div>
             </div>
         </section>        
         <section id="opiniones">
-            <h2>Opiniones</h2>
+            <h1>Opiniones</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloribus nisi praesentium odit distinctio tempora ducimus a, eveniet harum rem minus aut vero ipsam voluptate culpa dolorum possimus quas molestiae?</p>                        
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloribus nisi praesentium odit distinctio tempora ducimus a, eveniet harum rem minus aut vero ipsam voluptate culpa dolorum possimus quas molestiae?</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloribus nisi praesentium odit distinctio tempora ducimus a, eveniet harum rem minus aut vero ipsam voluptate culpa dolorum possimus quas molestiae?</p>
         </section>        
 
         <footer>
-            <div class="width-1-quarter">
-            </div>
             <div id="disclaimer" class="width-half">        
                 <p>Todos los derechos reservados - 2020</p>
             </div>
-            <div id="socialMedia" class="width-1-quarter">
-                <img src="img/instagram40x40.svg" alt="Instagram icon"><img src="img/twitter40x40.svg" alt="Twitter icon"><img src="img/facebook40x40.svg" alt="Facebook icon">
-            </div>
+            <nav id="socialMedia" class="width-1-quarter">
+                <ul>
+                    <li><a href="#"><img src="img/instagram40x40.svg" alt="Instagram icon"></a></li>
+                    <li><a href="#"><img src="img/twitter40x40.svg" alt="Twitter icon"></a></li>
+                    <li><a href="#"><img src="img/facebook40x40.svg" alt="Facebook icon"></a></li>
+                </ul>
+            </nav>
         </footer>   
     </div>
   

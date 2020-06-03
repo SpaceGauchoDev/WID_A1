@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<season number ="5">
+    <episode>
+        <number>1</number>
+        <title>Redemption II</title>
+        <desc>As the House of Duras is nearing victory over Worf and the forces of Gowron, Starfleet, led by Picard, works to expose Romulan interference in the Klingon Civil War.</desc>
+        <desc-extra>Written by Ronald D. Moore, Directed by David Carson</desc-extra>
+        <img-url>img/s05e01.png</img-url>
+    </episode>
+    <episode>
+        <number>2</number>
+        <title>Darmok</title>
+        <desc>Picard is captured, then trapped on a planet with an alien captain who speaks a metaphorical language incompatible with the universal translator.</desc>
+        <desc-extra>Teleplay by Joe Menosky, Story by Philip LaZebnik and Joe Menosky, Directed by Winrich Kolbe</desc-extra>
+        <img-url>img/s05e02.png</img-url>
+    </episode>
+    <episode>
+        <number>3</number>
+        <title>Ensign Ro</title>
+        <desc>The Enterprise takes on Ensign Ro Laren to help track down Bajoran terrorists who attacked a Federation colony.</desc>
+        <desc-extra>Teleplay by Michael Piller, Story by Rick Berman and Michael Piller, Directed by Les Landau</desc-extra>
+        <img-url>img/s05e03.png</img-url>
+    </episode>
+    <episode>
+        <number>4</number>
+        <title>Silicon Avatar</title>
+        <desc>The Enterprise gives chase to the Crystalline Entity after it destroys a Federation colony.</desc>
+        <desc-extra>Teleplay by Jeri Taylor, Story by Lawrence V. Conley, Directed by Cliff Bole</desc-extra>
+        <img-url>img/s05e04.png</img-url>
+    </episode>      
+    <episode>
+        <number>5</number>
+        <title>Disaster</title>
+        <desc>A quantum filament disables the Enterprise, leaving Counselor Troi in command on the bridge, and various groups on different parts of the ship facing perils alone.</desc>
+        <desc-extra>Teleplay by Ronald D. Moore, Story by Ron Jarvis and Philip A. Scorza, Directed by Gabrielle Beaumont</desc-extra>
+        <img-url>img/s05e05.png</img-url>
+    </episode>
+    <episode>
+        <number>6</number>
+        <title>The Game</title>
+        <desc>Wesley Crusher visits the Enterprise only to see everyone behaving strangely on account of an addictive, mind-controlling game.</desc>
+        <desc-extra>Teleplay by Brannon Braga, Story by Susan Sackett and Fred Bronson and Brannon Braga, Directed by Corey Allen</desc-extra>
+        <img-url>img/s05e06.png</img-url>
+    </episode>
+    <episode>
+        <number>7</number>
+        <title>Unification I</title>
+        <desc>To the Federation's surprise, Ambassador Spock has traveled to Romulus. Fearing he has defected, they send Captain Picard and Data on a covert mission to determine why.</desc>
+        <desc-extra>Teleplay by Jeri Taylor, Story by Rick Berman and Michael Piller, Directed by Les Landau</desc-extra>
+        <img-url>img/s05e07.png</img-url>
+    </episode>
+</episodes>
